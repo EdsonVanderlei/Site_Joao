@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="img/home.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-color: #dddddd;
+            background-size: cover;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+        .header {
+            width: 90vw;
+            margin: 10px 10px;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(109, 109, 109);
+            border-radius: 10px;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .menu a:hover:after {
+            opacity: 1;
+            left: 0px;
+            right: 0px;
+            transition: .8s;
+        }
+
+        .menu a {
+            letter-spacing: 4px;
+            font-weight: bolder;
+            position: relative;
+            color: rgb(0, 0, 0);
+            text-transform: capitalize;
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .menu a::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            background-color: #000;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+        }
+
+
+        .menu a:hover {
+            color: #fff;
+        }
+
+        .parallax {
+            max-width: 100%;
+            background-attachment: fixed;
+            width: 100vw;
+            height: 90vh;
+            border-radius: 20px;
+            border: solid 2px #fff;
+            background-size: auto;
+
+
+
+        }
+
+        #img1 {
+            background-image: url(img/fundo.jpg);
+
+        }
+
+        #img2 {
+            background-image: url("img/courvet.jpg");
+        }
+
+        .content {
+            max-width: 90vw;
+        }
+
+        .text {
+            padding: 50px;
+            margin: auto;
+            font-size: 20px;
+            width: 50vw;
+            text-align: center;
+        }
+
+        .menu a::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            background-color: #000;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+        }
+
+        #img3 {
+            background-image: url("http://portalbelohorizonte.com.br/sites/default/files/arquivos/onde-ficar/2019-09/piscina.jpg");
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo">
+            <img src="img/icon.png">
+            <h1>Hotel Ouro Minas</h1>
+        </div>
+        <ul class="menu">
+            <li class="menu-list"><a href="index.html">Home</a></li>
+            <li class="menu-list"><a href="quartos.html">Quartos</a></li>
+            <li class="menu-list"><a href="contato.html">Contato</a></li>
+            <li class="menu-list"><a href="social.html">Social</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="parallax" id="img1">
+        </div>
+
+        <p class="text">
+            Descubra o Ouro Minas Belo Horizonte, o hotel em BH mais próximo ao Aeroporto Internacional de Belo Horizonte, capital do turismo de negócios. O cinco estrelas favorito de celebridades do entretenimento, lendas do esporte, políticos e personalidades. O hotel foi cuidadosamente pensado na sua grandeza original e é um membro orgulhoso da Preferred Hotels & Resorts, Lifestyle Collection.
+        </p>
+        <div class="parallax" id="img2">
+        </div>
+        <p class="text">
+            Na capital do turismo de negócios, o Ouro minas oferece o melhor Centro de Eventos da cidade.
+            São 18 espaços, entre salas, salões e auditórios para até 2000 pessoas, com toda infraestrutura. Equipe para acompanhar o evento desde o orçamento, realização e fechamento. Além de cozinha dedicada com Chef exclusivo para atender os mais diferentes perfis. Tudo para você não ter que ser preocupar com nada além do sucesso do seu evento.
+        </p>
+        <div class="parallax" id="img3">
+        </div>
+        <p class="text">
+            São 25 andares, 301 apartamentos (133 standard e 168 luxo) e 45 suítes, sendo 3 presidenciais (Real com nada menos que 300m², Master com 160m² e Sênior com 140m²). Área de lazer com piscina climatizada, jacuzzi, saunas seca e úmida, sala de jogos, academia e solário. Além do premiado Restaurante Quinto do Ouro, interligado ao aconchegante Lobby Piano Bar e o Coffee Shop, local onde é servido o famoso e delicioso café da manhã Ouro Minas.
+        </p>
+
+    </div>
+
+
+
+</body>
+
+</html>

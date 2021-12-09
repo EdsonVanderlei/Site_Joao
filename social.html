@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="img/social.svg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social</title>
+  <style>
+    ul,
+    li,
+    ol {
+      list-style: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: #dddddd;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+    .header {
+      width: 90vw;
+      margin: 10px 10px;
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(109, 109, 109);
+      border-radius: 10px;
+    }
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      margin-right: 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+    }
+
+    .menu a:hover:after {
+      opacity: 1;
+      left: 0px;
+      right: 0px;
+      transition: .8s;
+    }
+
+    .menu a {
+      letter-spacing: 4px;
+      font-weight: bolder;
+      position: relative;
+      color: rgb(0, 0, 0);
+      text-transform: capitalize;
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      background-color: #000;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+    }
+
+
+    .menu a:hover {
+      color: #fff;
+    }
+
+    .conteudo-1 {
+      margin: 20px 0;
+      width: 90vw;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, .1);
+      border-radius: 10px;
+    }
+
+    .social {
+      margin-top: 40px;
+      display: flex;
+    }
+
+    .icon {
+      margin: 0 20px;
+      width: 40px;
+      height: 40px;
+      position: relative;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      background-color: #000;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+    }
+
+    .subtitulo {
+      color: rgb(0, 0, 0);
+      position: relative;
+      padding: 10px;
+
+
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      font-weight: bolder;
+
+    }
+
+    .icon:hover {
+      transform: scale(1.4);
+      transform: .5s;
+    }
+
+    .menu a:hover:after {
+      opacity: 1;
+      left: 0px;
+      right: 0px;
+      transition: .8s;
+    }
+
+    #titulo {
+      color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="img/icon.png">
+      <h1 id="titulo">Hotel Ouro Minas</h1>
+    </div>
+    <ul class="menu">
+      <li class="menu-list"><a href="index.html">Home</a></li>
+      <li class="menu-list"><a href="quartos.html">Quartos</a></li>
+      <li class="menu-list"><a href="contato.html">Contato</a></li>
+      <li class="menu-list"><a href="social.html">Social</a></li>
+    </ul>
+  </div>
+
+  <div class="conteudo-1">
+    <h1 class="subtitulo">Social</h1>
+    <ul class="social">
+
+      <li><a href="#" class="social-list"><img class="icon" src="img/logo-facebook.svg" alt=""></a></li>
+      <li><a href="#" class="social-list"><img class="icon" src="img/logo-instagram.svg" alt=""></a></li>
+      <li><a href="#" class="social-list"><img class="icon" src="img/logo-twitter.svg" alt=""></a></li>
+      <li><a href="#" class="social-list"><img class="icon" src="img/logo-whatsapp.svg" alt=""></a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
